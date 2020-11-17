@@ -96,7 +96,7 @@ class ModelLevel {
 
         namelevel.appendChild(Level);
 
-        Level.innerHTML = level;
+        Level.innerHTML = "0";
     }
 }
 
@@ -107,7 +107,16 @@ new ModelPersonnage(0);
 new ModelArme(0);
 
 //Ajoute des levels au différent personnage
-new ModelLevel(1);
+new ModelLevel(0);
 
 //Ajoute de la magie au personnage
 new ModelMagie(0);
+
+var btn = document.getElementById('btn');
+
+var l = 0;
+
+btn.addEventListener('click', function() {
+
+    var level = document.getElementById('Level').innerHTML = l++;
+})

@@ -30,3 +30,15 @@ h1 {
 .case2 td {
     height: 20px;
 }
+
+#btn {
+    padding: 13px;
+    background-color: #5f513f;
+    border: 1px solid black;
+    border-radius: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 6px 1px black;
+    cursor: pointer;
+}
