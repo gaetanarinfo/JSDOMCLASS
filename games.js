@@ -26,7 +26,7 @@ class ModelArme {
 
         name.appendChild(Armes);
 
-        Armes.innerHTML = "Nom de l'arme : " + Arme;
+        Armes.innerHTML = Arme;
 
     }
 }
@@ -53,16 +53,34 @@ class ModelPersonnage {
 
         namepersonnage.appendChild(personnage);
 
-        personnage.innerHTML = "Pseudo du Personnage : " + Personnage;
+        personnage.innerHTML = Personnage;
     }
 }
 
 class ModelMagie {
-    constructor(Air, Terre, Eau, Feu) {
-        this.Magical_1 = Air;
-        this.Magical_2 = Terre;
-        this.Magical_3 = Eau;
-        this.Magical_4 = Feu;
+    constructor(Magical) {
+
+        switch (Magical) {
+            case 0:
+                Magical = "Air";
+                break;
+            case 1:
+                Magical = "Terre";
+                break;
+            case 2:
+                Magical = "Eau";
+                break;
+            default:
+                Magical = "Feu"
+        }
+
+        var namemagical = document.getElementById('Magie');
+        var magical = document.createElement("span");
+
+        namemagical.appendChild(magical);
+
+        magical.innerHTML = Magical;
+
     }
 
 }
@@ -78,7 +96,7 @@ class ModelLevel {
 
         namelevel.appendChild(Level);
 
-        Level.innerHTML = "Pseudo du Personnage : " + level;
+        Level.innerHTML = level;
     }
 }
 
@@ -89,4 +107,7 @@ new ModelPersonnage(0);
 new ModelArme(0);
 
 //Ajoute des levels au différent personnage
-new ModelLevel(1 + 2);
+new ModelLevel(1);
+
+//Ajoute de la magie au personnage
+new ModelMagie(0);

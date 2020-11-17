@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+}
+
+h1 {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.case1 {
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.case2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.case2 td {
+    height: 20px;
+}
